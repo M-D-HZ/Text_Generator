@@ -17,6 +17,8 @@ public:
     map<string, int> transitions;
     State(string& s);
     bool transitionExists(string &s);
+    void newTransition(State* s);
+    void addTransition(string &s)
 };
 
 

@@ -18,3 +18,13 @@ bool State::transitionExists(string &s) {
         return false;
     }
 }
+
+void State::newTransition(State *s) { // nieuwe transitie toevoegen
+    nextStates[s->name] = s;
+    transitions[s->name] = 1;
+}
+
+void State::addTransition(string &s) { // count + 1 voor bestaande transitie
+    int count = transitions[s];
+    transitions[s] = count + 1;
+}
