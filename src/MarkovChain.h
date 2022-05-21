@@ -8,8 +8,10 @@ using namespace std;
 class MarkovChain {
 public:
     MarkovChain();
-    MarkovChain(string Filename);
-    map<string,State> states;
+    MarkovChain(string &filename);
+    map<string,State*> states;
+    bool wordExists(string &s);
+    void addWord(State* s);
 };
 
 

@@ -11,9 +11,12 @@ using namespace std;
 
 
 class State {
+public:
     string name;
-    map<string,State> nextstates;
+    map<string,State*> nextStates;
     map<string, int> transitions;
+    State(string& s);
+    bool transitionExists(string &s);
 };
 
 
