@@ -35,4 +35,4 @@ add_executable(TOg_TXT_Generator
         src/TOi/Yousra/DFA.h
         src/TOi/Yousra/NFA.cpp
         src/TOi/Yousra/NFA.h
-        src/main.cpp)
+        src/main.cpp src/MarkovChain.cpp src/MarkovChain.h src/State.cpp src/State.h)
