@@ -13,6 +13,7 @@ using namespace std;
 class MarkovChain {
 public:
     MarkovChain();
+    MarkovChain(string Filename);
     map<string,State> states;
 };
 

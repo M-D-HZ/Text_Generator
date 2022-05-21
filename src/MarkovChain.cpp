@@ -3,3 +3,8 @@
 //
 
 #include "MarkovChain.h"
+// Empty constructor
+MarkovChain::MarkovChain() {}
+
+// Train Markov chain constructor
+MarkovChain::MarkovChain(string Filename) {}

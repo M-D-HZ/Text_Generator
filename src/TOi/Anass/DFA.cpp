@@ -14,7 +14,6 @@ DFA::DFA(string file) {
     ifstream input(file);
     json j;
     input >> j;
-
     alphabet = j["alphabet"].get<vector<string>>();
     for (int i = 0; i < j["states"].size(); ++i) {
         State *newstate = new State();
