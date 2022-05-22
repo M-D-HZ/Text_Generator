@@ -53,7 +53,8 @@ CMAKE_BINARY_DIR = /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TA
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/TOg_TXT_Generator.dir/all
+all: CMakeFiles/TOI.dir/all
+all: CMakeFiles/Markovchain.dir/all
 
 .PHONY : all
 
@@ -63,36 +64,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/TOg_TXT_Generator.dir/clean
+clean: CMakeFiles/TOI.dir/clean
+clean: CMakeFiles/Markovchain.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/TOg_TXT_Generator.dir
+# Target rules for target CMakeFiles/TOI.dir
 
 # All Build rule for target.
-CMakeFiles/TOg_TXT_Generator.dir/all:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/depend
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target TOg_TXT_Generator"
-.PHONY : CMakeFiles/TOg_TXT_Generator.dir/all
+CMakeFiles/TOI.dir/all:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/depend
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target TOI"
+.PHONY : CMakeFiles/TOI.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/TOg_TXT_Generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles 17
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TOg_TXT_Generator.dir/all
+CMakeFiles/TOI.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles 19
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TOI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/TOg_TXT_Generator.dir/rule
+.PHONY : CMakeFiles/TOI.dir/rule
 
 # Convenience name for target.
-TOg_TXT_Generator: CMakeFiles/TOg_TXT_Generator.dir/rule
+TOI: CMakeFiles/TOI.dir/rule
 
-.PHONY : TOg_TXT_Generator
+.PHONY : TOI
 
 # clean rule for target.
-CMakeFiles/TOg_TXT_Generator.dir/clean:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/clean
-.PHONY : CMakeFiles/TOg_TXT_Generator.dir/clean
+CMakeFiles/TOI.dir/clean:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/clean
+.PHONY : CMakeFiles/TOI.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Markovchain.dir
+
+# All Build rule for target.
+CMakeFiles/Markovchain.dir/all:
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/depend
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target Markovchain"
+.PHONY : CMakeFiles/Markovchain.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Markovchain.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Markovchain.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Markovchain.dir/rule
+
+# Convenience name for target.
+Markovchain: CMakeFiles/Markovchain.dir/rule
+
+.PHONY : Markovchain
+
+# clean rule for target.
+CMakeFiles/Markovchain.dir/clean:
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/clean
+.PHONY : CMakeFiles/Markovchain.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

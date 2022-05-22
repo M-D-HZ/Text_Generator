@@ -18,7 +18,7 @@ public:
     State(string& s);
     bool transitionExists(string &s);
     void newTransition(State* s);
-    void addTransition(string &s)
+    void addTransition(string &s);
 };
 
 

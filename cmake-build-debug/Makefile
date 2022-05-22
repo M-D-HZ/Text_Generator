@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named TOg_TXT_Generator
+# Target rules for targets named TOI
 
 # Build rule for target.
-TOg_TXT_Generator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TOg_TXT_Generator
-.PHONY : TOg_TXT_Generator
+TOI: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TOI
+.PHONY : TOI
 
 # fast build rule for target.
-TOg_TXT_Generator/fast:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/build
-.PHONY : TOg_TXT_Generator/fast
+TOI/fast:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/build
+.PHONY : TOI/fast
+
+#=============================================================================
+# Target rules for targets named Markovchain
+
+# Build rule for target.
+Markovchain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Markovchain
+.PHONY : Markovchain
+
+# fast build rule for target.
+Markovchain/fast:
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/build
+.PHONY : Markovchain/fast
 
 src/MarkovChain.o: src/MarkovChain.cpp.o
 
@@ -129,7 +142,7 @@ src/MarkovChain.o: src/MarkovChain.cpp.o
 
 # target to build an object file
 src/MarkovChain.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/MarkovChain.cpp.o
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/MarkovChain.cpp.o
 .PHONY : src/MarkovChain.cpp.o
 
 src/MarkovChain.i: src/MarkovChain.cpp.i
@@ -138,7 +151,7 @@ src/MarkovChain.i: src/MarkovChain.cpp.i
 
 # target to preprocess a source file
 src/MarkovChain.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/MarkovChain.cpp.i
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/MarkovChain.cpp.i
 .PHONY : src/MarkovChain.cpp.i
 
 src/MarkovChain.s: src/MarkovChain.cpp.s
@@ -147,7 +160,7 @@ src/MarkovChain.s: src/MarkovChain.cpp.s
 
 # target to generate assembly for a file
 src/MarkovChain.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/MarkovChain.cpp.s
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/MarkovChain.cpp.s
 .PHONY : src/MarkovChain.cpp.s
 
 src/State.o: src/State.cpp.o
@@ -156,7 +169,7 @@ src/State.o: src/State.cpp.o
 
 # target to build an object file
 src/State.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/State.cpp.o
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/State.cpp.o
 .PHONY : src/State.cpp.o
 
 src/State.i: src/State.cpp.i
@@ -165,7 +178,7 @@ src/State.i: src/State.cpp.i
 
 # target to preprocess a source file
 src/State.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/State.cpp.i
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/State.cpp.i
 .PHONY : src/State.cpp.i
 
 src/State.s: src/State.cpp.s
@@ -174,8 +187,143 @@ src/State.s: src/State.cpp.s
 
 # target to generate assembly for a file
 src/State.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/State.cpp.s
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/State.cpp.s
 .PHONY : src/State.cpp.s
+
+src/TOI/Yassir/MSSC/DFA.o: src/TOI/Yassir/MSSC/DFA.cpp.o
+
+.PHONY : src/TOI/Yassir/MSSC/DFA.o
+
+# target to build an object file
+src/TOI/Yassir/MSSC/DFA.cpp.o:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/DFA.cpp.o
+.PHONY : src/TOI/Yassir/MSSC/DFA.cpp.o
+
+src/TOI/Yassir/MSSC/DFA.i: src/TOI/Yassir/MSSC/DFA.cpp.i
+
+.PHONY : src/TOI/Yassir/MSSC/DFA.i
+
+# target to preprocess a source file
+src/TOI/Yassir/MSSC/DFA.cpp.i:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/DFA.cpp.i
+.PHONY : src/TOI/Yassir/MSSC/DFA.cpp.i
+
+src/TOI/Yassir/MSSC/DFA.s: src/TOI/Yassir/MSSC/DFA.cpp.s
+
+.PHONY : src/TOI/Yassir/MSSC/DFA.s
+
+# target to generate assembly for a file
+src/TOI/Yassir/MSSC/DFA.cpp.s:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/DFA.cpp.s
+.PHONY : src/TOI/Yassir/MSSC/DFA.cpp.s
+
+src/TOI/Yassir/MSSC/ENFA.o: src/TOI/Yassir/MSSC/ENFA.cpp.o
+
+.PHONY : src/TOI/Yassir/MSSC/ENFA.o
+
+# target to build an object file
+src/TOI/Yassir/MSSC/ENFA.cpp.o:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/ENFA.cpp.o
+.PHONY : src/TOI/Yassir/MSSC/ENFA.cpp.o
+
+src/TOI/Yassir/MSSC/ENFA.i: src/TOI/Yassir/MSSC/ENFA.cpp.i
+
+.PHONY : src/TOI/Yassir/MSSC/ENFA.i
+
+# target to preprocess a source file
+src/TOI/Yassir/MSSC/ENFA.cpp.i:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/ENFA.cpp.i
+.PHONY : src/TOI/Yassir/MSSC/ENFA.cpp.i
+
+src/TOI/Yassir/MSSC/ENFA.s: src/TOI/Yassir/MSSC/ENFA.cpp.s
+
+.PHONY : src/TOI/Yassir/MSSC/ENFA.s
+
+# target to generate assembly for a file
+src/TOI/Yassir/MSSC/ENFA.cpp.s:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/ENFA.cpp.s
+.PHONY : src/TOI/Yassir/MSSC/ENFA.cpp.s
+
+src/TOI/Yassir/MSSC/State.o: src/TOI/Yassir/MSSC/State.cpp.o
+
+.PHONY : src/TOI/Yassir/MSSC/State.o
+
+# target to build an object file
+src/TOI/Yassir/MSSC/State.cpp.o:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/State.cpp.o
+.PHONY : src/TOI/Yassir/MSSC/State.cpp.o
+
+src/TOI/Yassir/MSSC/State.i: src/TOI/Yassir/MSSC/State.cpp.i
+
+.PHONY : src/TOI/Yassir/MSSC/State.i
+
+# target to preprocess a source file
+src/TOI/Yassir/MSSC/State.cpp.i:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/State.cpp.i
+.PHONY : src/TOI/Yassir/MSSC/State.cpp.i
+
+src/TOI/Yassir/MSSC/State.s: src/TOI/Yassir/MSSC/State.cpp.s
+
+.PHONY : src/TOI/Yassir/MSSC/State.s
+
+# target to generate assembly for a file
+src/TOI/Yassir/MSSC/State.cpp.s:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/State.cpp.s
+.PHONY : src/TOI/Yassir/MSSC/State.cpp.s
+
+src/TOI/Yassir/MSSC/Transition.o: src/TOI/Yassir/MSSC/Transition.cpp.o
+
+.PHONY : src/TOI/Yassir/MSSC/Transition.o
+
+# target to build an object file
+src/TOI/Yassir/MSSC/Transition.cpp.o:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/Transition.cpp.o
+.PHONY : src/TOI/Yassir/MSSC/Transition.cpp.o
+
+src/TOI/Yassir/MSSC/Transition.i: src/TOI/Yassir/MSSC/Transition.cpp.i
+
+.PHONY : src/TOI/Yassir/MSSC/Transition.i
+
+# target to preprocess a source file
+src/TOI/Yassir/MSSC/Transition.cpp.i:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/Transition.cpp.i
+.PHONY : src/TOI/Yassir/MSSC/Transition.cpp.i
+
+src/TOI/Yassir/MSSC/Transition.s: src/TOI/Yassir/MSSC/Transition.cpp.s
+
+.PHONY : src/TOI/Yassir/MSSC/Transition.s
+
+# target to generate assembly for a file
+src/TOI/Yassir/MSSC/Transition.cpp.s:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/MSSC/Transition.cpp.s
+.PHONY : src/TOI/Yassir/MSSC/Transition.cpp.s
+
+src/TOI/Yassir/PDA/DFA.o: src/TOI/Yassir/PDA/DFA.cpp.o
+
+.PHONY : src/TOI/Yassir/PDA/DFA.o
+
+# target to build an object file
+src/TOI/Yassir/PDA/DFA.cpp.o:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/PDA/DFA.cpp.o
+.PHONY : src/TOI/Yassir/PDA/DFA.cpp.o
+
+src/TOI/Yassir/PDA/DFA.i: src/TOI/Yassir/PDA/DFA.cpp.i
+
+.PHONY : src/TOI/Yassir/PDA/DFA.i
+
+# target to preprocess a source file
+src/TOI/Yassir/PDA/DFA.cpp.i:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/PDA/DFA.cpp.i
+.PHONY : src/TOI/Yassir/PDA/DFA.cpp.i
+
+src/TOI/Yassir/PDA/DFA.s: src/TOI/Yassir/PDA/DFA.cpp.s
+
+.PHONY : src/TOI/Yassir/PDA/DFA.s
+
+# target to generate assembly for a file
+src/TOI/Yassir/PDA/DFA.cpp.s:
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOI/Yassir/PDA/DFA.cpp.s
+.PHONY : src/TOI/Yassir/PDA/DFA.cpp.s
 
 src/TOi/Anass/DFA.o: src/TOi/Anass/DFA.cpp.o
 
@@ -183,7 +331,7 @@ src/TOi/Anass/DFA.o: src/TOi/Anass/DFA.cpp.o
 
 # target to build an object file
 src/TOi/Anass/DFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/DFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/DFA.cpp.o
 .PHONY : src/TOi/Anass/DFA.cpp.o
 
 src/TOi/Anass/DFA.i: src/TOi/Anass/DFA.cpp.i
@@ -192,7 +340,7 @@ src/TOi/Anass/DFA.i: src/TOi/Anass/DFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Anass/DFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/DFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/DFA.cpp.i
 .PHONY : src/TOi/Anass/DFA.cpp.i
 
 src/TOi/Anass/DFA.s: src/TOi/Anass/DFA.cpp.s
@@ -201,7 +349,7 @@ src/TOi/Anass/DFA.s: src/TOi/Anass/DFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Anass/DFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/DFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/DFA.cpp.s
 .PHONY : src/TOi/Anass/DFA.cpp.s
 
 src/TOi/Anass/NFA.o: src/TOi/Anass/NFA.cpp.o
@@ -210,7 +358,7 @@ src/TOi/Anass/NFA.o: src/TOi/Anass/NFA.cpp.o
 
 # target to build an object file
 src/TOi/Anass/NFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/NFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/NFA.cpp.o
 .PHONY : src/TOi/Anass/NFA.cpp.o
 
 src/TOi/Anass/NFA.i: src/TOi/Anass/NFA.cpp.i
@@ -219,7 +367,7 @@ src/TOi/Anass/NFA.i: src/TOi/Anass/NFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Anass/NFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/NFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/NFA.cpp.i
 .PHONY : src/TOi/Anass/NFA.cpp.i
 
 src/TOi/Anass/NFA.s: src/TOi/Anass/NFA.cpp.s
@@ -228,7 +376,7 @@ src/TOi/Anass/NFA.s: src/TOi/Anass/NFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Anass/NFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/NFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/NFA.cpp.s
 .PHONY : src/TOi/Anass/NFA.cpp.s
 
 src/TOi/Anass/StateNFA.o: src/TOi/Anass/StateNFA.cpp.o
@@ -237,7 +385,7 @@ src/TOi/Anass/StateNFA.o: src/TOi/Anass/StateNFA.cpp.o
 
 # target to build an object file
 src/TOi/Anass/StateNFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/StateNFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/StateNFA.cpp.o
 .PHONY : src/TOi/Anass/StateNFA.cpp.o
 
 src/TOi/Anass/StateNFA.i: src/TOi/Anass/StateNFA.cpp.i
@@ -246,7 +394,7 @@ src/TOi/Anass/StateNFA.i: src/TOi/Anass/StateNFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Anass/StateNFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/StateNFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/StateNFA.cpp.i
 .PHONY : src/TOi/Anass/StateNFA.cpp.i
 
 src/TOi/Anass/StateNFA.s: src/TOi/Anass/StateNFA.cpp.s
@@ -255,7 +403,7 @@ src/TOi/Anass/StateNFA.s: src/TOi/Anass/StateNFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Anass/StateNFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/StateNFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/StateNFA.cpp.s
 .PHONY : src/TOi/Anass/StateNFA.cpp.s
 
 src/TOi/Anass/TransitionDFA.o: src/TOi/Anass/TransitionDFA.cpp.o
@@ -264,7 +412,7 @@ src/TOi/Anass/TransitionDFA.o: src/TOi/Anass/TransitionDFA.cpp.o
 
 # target to build an object file
 src/TOi/Anass/TransitionDFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/TransitionDFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/TransitionDFA.cpp.o
 .PHONY : src/TOi/Anass/TransitionDFA.cpp.o
 
 src/TOi/Anass/TransitionDFA.i: src/TOi/Anass/TransitionDFA.cpp.i
@@ -273,7 +421,7 @@ src/TOi/Anass/TransitionDFA.i: src/TOi/Anass/TransitionDFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Anass/TransitionDFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/TransitionDFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/TransitionDFA.cpp.i
 .PHONY : src/TOi/Anass/TransitionDFA.cpp.i
 
 src/TOi/Anass/TransitionDFA.s: src/TOi/Anass/TransitionDFA.cpp.s
@@ -282,7 +430,7 @@ src/TOi/Anass/TransitionDFA.s: src/TOi/Anass/TransitionDFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Anass/TransitionDFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/TransitionDFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/TransitionDFA.cpp.s
 .PHONY : src/TOi/Anass/TransitionDFA.cpp.s
 
 src/TOi/Anass/TransitionNFA.o: src/TOi/Anass/TransitionNFA.cpp.o
@@ -291,7 +439,7 @@ src/TOi/Anass/TransitionNFA.o: src/TOi/Anass/TransitionNFA.cpp.o
 
 # target to build an object file
 src/TOi/Anass/TransitionNFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/TransitionNFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/TransitionNFA.cpp.o
 .PHONY : src/TOi/Anass/TransitionNFA.cpp.o
 
 src/TOi/Anass/TransitionNFA.i: src/TOi/Anass/TransitionNFA.cpp.i
@@ -300,7 +448,7 @@ src/TOi/Anass/TransitionNFA.i: src/TOi/Anass/TransitionNFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Anass/TransitionNFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/TransitionNFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/TransitionNFA.cpp.i
 .PHONY : src/TOi/Anass/TransitionNFA.cpp.i
 
 src/TOi/Anass/TransitionNFA.s: src/TOi/Anass/TransitionNFA.cpp.s
@@ -309,7 +457,7 @@ src/TOi/Anass/TransitionNFA.s: src/TOi/Anass/TransitionNFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Anass/TransitionNFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/TransitionNFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/TransitionNFA.cpp.s
 .PHONY : src/TOi/Anass/TransitionNFA.cpp.s
 
 src/TOi/Anass/main.o: src/TOi/Anass/main.cpp.o
@@ -318,7 +466,7 @@ src/TOi/Anass/main.o: src/TOi/Anass/main.cpp.o
 
 # target to build an object file
 src/TOi/Anass/main.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/main.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/main.cpp.o
 .PHONY : src/TOi/Anass/main.cpp.o
 
 src/TOi/Anass/main.i: src/TOi/Anass/main.cpp.i
@@ -327,7 +475,7 @@ src/TOi/Anass/main.i: src/TOi/Anass/main.cpp.i
 
 # target to preprocess a source file
 src/TOi/Anass/main.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/main.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/main.cpp.i
 .PHONY : src/TOi/Anass/main.cpp.i
 
 src/TOi/Anass/main.s: src/TOi/Anass/main.cpp.s
@@ -336,7 +484,7 @@ src/TOi/Anass/main.s: src/TOi/Anass/main.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Anass/main.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Anass/main.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Anass/main.cpp.s
 .PHONY : src/TOi/Anass/main.cpp.s
 
 src/TOi/Chloe/DFA.o: src/TOi/Chloe/DFA.cpp.o
@@ -345,7 +493,7 @@ src/TOi/Chloe/DFA.o: src/TOi/Chloe/DFA.cpp.o
 
 # target to build an object file
 src/TOi/Chloe/DFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/DFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/DFA.cpp.o
 .PHONY : src/TOi/Chloe/DFA.cpp.o
 
 src/TOi/Chloe/DFA.i: src/TOi/Chloe/DFA.cpp.i
@@ -354,7 +502,7 @@ src/TOi/Chloe/DFA.i: src/TOi/Chloe/DFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Chloe/DFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/DFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/DFA.cpp.i
 .PHONY : src/TOi/Chloe/DFA.cpp.i
 
 src/TOi/Chloe/DFA.s: src/TOi/Chloe/DFA.cpp.s
@@ -363,7 +511,7 @@ src/TOi/Chloe/DFA.s: src/TOi/Chloe/DFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Chloe/DFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/DFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/DFA.cpp.s
 .PHONY : src/TOi/Chloe/DFA.cpp.s
 
 src/TOi/Chloe/NFA.o: src/TOi/Chloe/NFA.cpp.o
@@ -372,7 +520,7 @@ src/TOi/Chloe/NFA.o: src/TOi/Chloe/NFA.cpp.o
 
 # target to build an object file
 src/TOi/Chloe/NFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/NFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/NFA.cpp.o
 .PHONY : src/TOi/Chloe/NFA.cpp.o
 
 src/TOi/Chloe/NFA.i: src/TOi/Chloe/NFA.cpp.i
@@ -381,7 +529,7 @@ src/TOi/Chloe/NFA.i: src/TOi/Chloe/NFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Chloe/NFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/NFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/NFA.cpp.i
 .PHONY : src/TOi/Chloe/NFA.cpp.i
 
 src/TOi/Chloe/NFA.s: src/TOi/Chloe/NFA.cpp.s
@@ -390,7 +538,7 @@ src/TOi/Chloe/NFA.s: src/TOi/Chloe/NFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Chloe/NFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/NFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/NFA.cpp.s
 .PHONY : src/TOi/Chloe/NFA.cpp.s
 
 src/TOi/Chloe/RE.o: src/TOi/Chloe/RE.cpp.o
@@ -399,7 +547,7 @@ src/TOi/Chloe/RE.o: src/TOi/Chloe/RE.cpp.o
 
 # target to build an object file
 src/TOi/Chloe/RE.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/RE.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/RE.cpp.o
 .PHONY : src/TOi/Chloe/RE.cpp.o
 
 src/TOi/Chloe/RE.i: src/TOi/Chloe/RE.cpp.i
@@ -408,7 +556,7 @@ src/TOi/Chloe/RE.i: src/TOi/Chloe/RE.cpp.i
 
 # target to preprocess a source file
 src/TOi/Chloe/RE.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/RE.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/RE.cpp.i
 .PHONY : src/TOi/Chloe/RE.cpp.i
 
 src/TOi/Chloe/RE.s: src/TOi/Chloe/RE.cpp.s
@@ -417,7 +565,7 @@ src/TOi/Chloe/RE.s: src/TOi/Chloe/RE.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Chloe/RE.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/RE.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/RE.cpp.s
 .PHONY : src/TOi/Chloe/RE.cpp.s
 
 src/TOi/Chloe/State.o: src/TOi/Chloe/State.cpp.o
@@ -426,7 +574,7 @@ src/TOi/Chloe/State.o: src/TOi/Chloe/State.cpp.o
 
 # target to build an object file
 src/TOi/Chloe/State.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/State.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/State.cpp.o
 .PHONY : src/TOi/Chloe/State.cpp.o
 
 src/TOi/Chloe/State.i: src/TOi/Chloe/State.cpp.i
@@ -435,7 +583,7 @@ src/TOi/Chloe/State.i: src/TOi/Chloe/State.cpp.i
 
 # target to preprocess a source file
 src/TOi/Chloe/State.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/State.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/State.cpp.i
 .PHONY : src/TOi/Chloe/State.cpp.i
 
 src/TOi/Chloe/State.s: src/TOi/Chloe/State.cpp.s
@@ -444,7 +592,7 @@ src/TOi/Chloe/State.s: src/TOi/Chloe/State.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Chloe/State.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Chloe/State.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Chloe/State.cpp.s
 .PHONY : src/TOi/Chloe/State.cpp.s
 
 src/TOi/Yousra/Automata.o: src/TOi/Yousra/Automata.cpp.o
@@ -453,7 +601,7 @@ src/TOi/Yousra/Automata.o: src/TOi/Yousra/Automata.cpp.o
 
 # target to build an object file
 src/TOi/Yousra/Automata.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/Automata.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/Automata.cpp.o
 .PHONY : src/TOi/Yousra/Automata.cpp.o
 
 src/TOi/Yousra/Automata.i: src/TOi/Yousra/Automata.cpp.i
@@ -462,7 +610,7 @@ src/TOi/Yousra/Automata.i: src/TOi/Yousra/Automata.cpp.i
 
 # target to preprocess a source file
 src/TOi/Yousra/Automata.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/Automata.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/Automata.cpp.i
 .PHONY : src/TOi/Yousra/Automata.cpp.i
 
 src/TOi/Yousra/Automata.s: src/TOi/Yousra/Automata.cpp.s
@@ -471,7 +619,7 @@ src/TOi/Yousra/Automata.s: src/TOi/Yousra/Automata.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Yousra/Automata.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/Automata.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/Automata.cpp.s
 .PHONY : src/TOi/Yousra/Automata.cpp.s
 
 src/TOi/Yousra/DFA.o: src/TOi/Yousra/DFA.cpp.o
@@ -480,7 +628,7 @@ src/TOi/Yousra/DFA.o: src/TOi/Yousra/DFA.cpp.o
 
 # target to build an object file
 src/TOi/Yousra/DFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/DFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/DFA.cpp.o
 .PHONY : src/TOi/Yousra/DFA.cpp.o
 
 src/TOi/Yousra/DFA.i: src/TOi/Yousra/DFA.cpp.i
@@ -489,7 +637,7 @@ src/TOi/Yousra/DFA.i: src/TOi/Yousra/DFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Yousra/DFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/DFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/DFA.cpp.i
 .PHONY : src/TOi/Yousra/DFA.cpp.i
 
 src/TOi/Yousra/DFA.s: src/TOi/Yousra/DFA.cpp.s
@@ -498,7 +646,7 @@ src/TOi/Yousra/DFA.s: src/TOi/Yousra/DFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Yousra/DFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/DFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/DFA.cpp.s
 .PHONY : src/TOi/Yousra/DFA.cpp.s
 
 src/TOi/Yousra/NFA.o: src/TOi/Yousra/NFA.cpp.o
@@ -507,7 +655,7 @@ src/TOi/Yousra/NFA.o: src/TOi/Yousra/NFA.cpp.o
 
 # target to build an object file
 src/TOi/Yousra/NFA.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/NFA.cpp.o
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/NFA.cpp.o
 .PHONY : src/TOi/Yousra/NFA.cpp.o
 
 src/TOi/Yousra/NFA.i: src/TOi/Yousra/NFA.cpp.i
@@ -516,7 +664,7 @@ src/TOi/Yousra/NFA.i: src/TOi/Yousra/NFA.cpp.i
 
 # target to preprocess a source file
 src/TOi/Yousra/NFA.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/NFA.cpp.i
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/NFA.cpp.i
 .PHONY : src/TOi/Yousra/NFA.cpp.i
 
 src/TOi/Yousra/NFA.s: src/TOi/Yousra/NFA.cpp.s
@@ -525,7 +673,7 @@ src/TOi/Yousra/NFA.s: src/TOi/Yousra/NFA.cpp.s
 
 # target to generate assembly for a file
 src/TOi/Yousra/NFA.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/TOi/Yousra/NFA.cpp.s
+	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/src/TOi/Yousra/NFA.cpp.s
 .PHONY : src/TOi/Yousra/NFA.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -534,7 +682,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -543,7 +691,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -552,7 +700,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/TOg_TXT_Generator.dir/build.make CMakeFiles/TOg_TXT_Generator.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/Markovchain.dir/build.make CMakeFiles/Markovchain.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -563,13 +711,29 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... TOg_TXT_Generator"
+	@echo "... TOI"
+	@echo "... Markovchain"
 	@echo "... src/MarkovChain.o"
 	@echo "... src/MarkovChain.i"
 	@echo "... src/MarkovChain.s"
 	@echo "... src/State.o"
 	@echo "... src/State.i"
 	@echo "... src/State.s"
+	@echo "... src/TOI/Yassir/MSSC/DFA.o"
+	@echo "... src/TOI/Yassir/MSSC/DFA.i"
+	@echo "... src/TOI/Yassir/MSSC/DFA.s"
+	@echo "... src/TOI/Yassir/MSSC/ENFA.o"
+	@echo "... src/TOI/Yassir/MSSC/ENFA.i"
+	@echo "... src/TOI/Yassir/MSSC/ENFA.s"
+	@echo "... src/TOI/Yassir/MSSC/State.o"
+	@echo "... src/TOI/Yassir/MSSC/State.i"
+	@echo "... src/TOI/Yassir/MSSC/State.s"
+	@echo "... src/TOI/Yassir/MSSC/Transition.o"
+	@echo "... src/TOI/Yassir/MSSC/Transition.i"
+	@echo "... src/TOI/Yassir/MSSC/Transition.s"
+	@echo "... src/TOI/Yassir/PDA/DFA.o"
+	@echo "... src/TOI/Yassir/PDA/DFA.i"
+	@echo "... src/TOI/Yassir/PDA/DFA.s"
 	@echo "... src/TOi/Anass/DFA.o"
 	@echo "... src/TOi/Anass/DFA.i"
 	@echo "... src/TOi/Anass/DFA.s"

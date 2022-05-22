@@ -7,7 +7,12 @@ include_directories(src/TOi/Anass)
 include_directories(src/TOi/Chloe)
 include_directories(src/TOi/Yousra)
 
-add_executable(TOg_TXT_Generator
+set(MARKOV_SOURCE_FILES
+        src/main.cpp
+        src/MarkovChain.cpp src/MarkovChain.h
+        src/State.cpp src/State.h
+        )
+set(TOI_SOURCE_FILES
         src/TOi/Anass/DFA.cpp
         src/TOi/Anass/DFA.h
         src/TOi/Anass/json.hpp
@@ -35,7 +40,21 @@ add_executable(TOg_TXT_Generator
         src/TOi/Yousra/DFA.h
         src/TOi/Yousra/NFA.cpp
         src/TOi/Yousra/NFA.h
-        src/main.cpp
-        src/MarkovChain.cpp src/MarkovChain.h
-        src/State.cpp src/State.h)
+        src/TOI/Yassir/MSSC/DFA.cpp
+        src/TOI/Yassir/MSSC/DFA.h
+        src/TOI/Yassir/MSSC/ENFA.cpp
+        src/TOI/Yassir/MSSC/ENFA.h
+        src/TOI/Yassir/MSSC/json.hpp
+        src/TOI/Yassir/MSSC/State.cpp
+        src/TOI/Yassir/MSSC/State.h
+        src/TOI/Yassir/MSSC/Transition.cpp
+        src/TOI/Yassir/MSSC/Transition.h
+        src/TOI/Yassir/PDA/DFA.cpp
+        src/TOI/Yassir/PDA/DFA.h
+        src/TOI/Yassir/PDA/json.hpp
+        )
+
+add_executable(Markovchain ${MARKOV_SOURCE_FILES})
+
+add_executable(TOI ${TOI_SOURCE_FILES})
 
