@@ -12,6 +12,9 @@ public:
     map<string,State*> states;
     bool wordExists(string &s);
     void addWord(State* s);
+    string outputFile;
+    void randomWalkAlgorithm(string &input);
+    State* currentState;
 };
 
 

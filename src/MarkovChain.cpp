@@ -2,7 +2,8 @@
 #include <fstream>
 #include "MarkovChain.h"
 
-
+#include <vector>
+#include <string>
 using namespace std;
 
 /// Empty constructor
@@ -43,9 +44,9 @@ MarkovChain::MarkovChain(string &filename) {
 }
 
 
-/// check if state already exists
-/// 2. exists: add to transitions of previous word (state)
-/// 3. doesn't exist: make new state + add to transitions of previous word + add to states of markovchain
+// check if state already exists
+// 2. exists: add to transitions of previous word (state)
+// 3. doesn't exist: make new state + add to transitions of previous word + add to states of markovchain
 
 bool MarkovChain::wordExists(string &s) {
     map<string,State*>::iterator it;
@@ -60,4 +61,22 @@ bool MarkovChain::wordExists(string &s) {
 
 void MarkovChain::addWord(State *s) {
     states[s->name] = s;
+}
+
+void MarkovChain::randomWalkAlgorithm(string &input) {
+
+    int rand = 0;
+
+    while (currentState->name != ".") {
+        currentState = states[input];
+        vector<string>nextWords;
+        for (auto t:currentState->transitions) {
+            vector<string> v(t.second,t.first);
+            nextWords.insert(nextWords.end(), v.begin(), v.end());
+        }
+        int size = nextWords.size();
+        srand((int)time(0));
+        int r = (rand() %size) + 1;
+        currentState = states[nextWords[r]];
+    }
 }

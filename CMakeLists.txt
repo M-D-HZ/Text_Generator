@@ -40,18 +40,6 @@ set(TOI_SOURCE_FILES
         src/TOi/Yousra/DFA.h
         src/TOi/Yousra/NFA.cpp
         src/TOi/Yousra/NFA.h
-        src/TOI/Yassir/MSSC/DFA.cpp
-        src/TOI/Yassir/MSSC/DFA.h
-        src/TOI/Yassir/MSSC/ENFA.cpp
-        src/TOI/Yassir/MSSC/ENFA.h
-        src/TOI/Yassir/MSSC/json.hpp
-        src/TOI/Yassir/MSSC/State.cpp
-        src/TOI/Yassir/MSSC/State.h
-        src/TOI/Yassir/MSSC/Transition.cpp
-        src/TOI/Yassir/MSSC/Transition.h
-        src/TOI/Yassir/PDA/DFA.cpp
-        src/TOI/Yassir/PDA/DFA.h
-        src/TOI/Yassir/PDA/json.hpp
         )
 
 add_executable(Markovchain ${MARKOV_SOURCE_FILES})

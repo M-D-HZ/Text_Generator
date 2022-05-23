@@ -8,45 +8,35 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TOI">
-				<Option output="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/TOI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option output="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/TOI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -56,22 +46,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 TOI"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 TOI"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TOI/fast">
-				<Option output="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/TOI" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option output="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/TOI" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -81,22 +71,32 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 TOI/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 TOI/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Markovchain">
-				<Option output="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option output="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -106,22 +106,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Markovchain/fast">
-				<Option output="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option output="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe"/>
-					<Add directory="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe"/>
+					<Add directory="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -131,146 +131,110 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/MarkovChain.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/MarkovChain.cpp">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/MarkovChain.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/MarkovChain.h">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/State.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/State.cpp">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/State.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/State.h">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/DFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/DFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/DFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/DFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/ENFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/NFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/ENFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/NFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/State.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/StateNFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/State.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/StateNFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/Transition.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/TransitionDFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/Transition.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/TransitionDFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/MSSC/json.hpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/TransitionNFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/PDA/DFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/TransitionNFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/PDA/DFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/json.hpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOI/Yassir/PDA/json.hpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Anass/main.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/DFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/DFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/DFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/DFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/NFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/NFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/NFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/NFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/StateNFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/RE.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/StateNFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/RE.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/TransitionDFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/State.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/TransitionDFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/State.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/TransitionNFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Chloe/json.hpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/TransitionNFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra/Automata.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/json.hpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra/Automata.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Anass/main.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra/DFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/DFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra/DFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/DFA.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra/NFA.cpp">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/NFA.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/TOi/Yousra/NFA.h">
 			<Option target="TOI"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/NFA.h">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/RE.cpp">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/RE.h">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/State.cpp">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/State.h">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Chloe/json.hpp">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra/Automata.cpp">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra/Automata.h">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra/DFA.cpp">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra/DFA.h">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra/NFA.cpp">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/TOi/Yousra/NFA.h">
-			<Option target="TOI"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/main.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/main.cpp">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/CMakeLists.txt">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
