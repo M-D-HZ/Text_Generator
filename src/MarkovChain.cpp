@@ -87,7 +87,6 @@ void MarkovChain::randomWalkAlgorithm(string &input) {
     int rand = 0;
 
     while (currentState->name != ".") {
-        output<< currentState->name << " ";
         vector<string>nextWords;
         for (auto t:currentState->transitions) {
             vector<string> v(t.second,t.first);
@@ -96,6 +95,10 @@ void MarkovChain::randomWalkAlgorithm(string &input) {
         int size = nextWords.size();
         srand((int)time(0));
         int r = rand %size;
+        output<< currentState->name;
+        if (states[nextWords[r]]->name != ".") {
+            output<< " ";
+        }
         currentState = states[nextWords[r]];
     }
 
