@@ -7,6 +7,6 @@ using namespace std;
 int main(){
     string Filename = "Parse.txt";
     MarkovChain Chain(Filename);
-    State* test = Chain.states["lives"];
+    State* test = Chain.states["."];
     cout << "Poopie" << endl;
 };

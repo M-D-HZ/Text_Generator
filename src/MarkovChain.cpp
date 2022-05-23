@@ -18,9 +18,21 @@ MarkovChain::MarkovChain(string &filename) {
     }
     string PreviousWord;
     State* PreviousWordState;
+    string Punctuation;
+    bool repeat = false;
     while(outfile){
         string CurrentWord;
-        getline(outfile,CurrentWord,' ');     /// Read out of file until u encounter ' '
+        if (!repeat){
+            getline(outfile,CurrentWord,' ');     /// Read out of file until u encounter ' '
+        }
+        else{
+            CurrentWord = Punctuation;
+        }
+        if (!repeat && CurrentWord[CurrentWord.size()-1] == '.' or !repeat && CurrentWord[CurrentWord.size()-1] == ','){
+            Punctuation = CurrentWord[CurrentWord.size()-1];
+            CurrentWord.erase(CurrentWord.size()-1);
+            repeat = true;
+        }
         State* newstate;
         if (!wordExists(CurrentWord)){                 /// if word hasn't been added to the states
             newstate = new State(CurrentWord);         /// create a new state for current word
@@ -36,6 +48,9 @@ MarkovChain::MarkovChain(string &filename) {
             else{
                 PreviousWordState->newTransition(newstate);         /// Else create a new transition for the current word
             }
+        }
+        if (CurrentWord == Punctuation){
+            repeat = false;
         }
         PreviousWord = CurrentWord;                      /// Set the previous word to Current word
         PreviousWordState = newstate;                    /// Set the state of the previous word to the state we used
@@ -76,7 +91,7 @@ void MarkovChain::randomWalkAlgorithm(string &input) {
         }
         int size = nextWords.size();
         srand((int)time(0));
-        int r = (rand() %size) + 1;
+        int r = rand %size;
         currentState = states[nextWords[r]];
     }
 }
