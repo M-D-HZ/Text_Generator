@@ -83,11 +83,10 @@ void MarkovChain::randomWalkAlgorithm(string &input) {
 
     fstream output;
     output.open("output.txt",ios::out|ios::trunc);
-
+    currentState = states[input];
     int rand = 0;
 
     while (currentState->name != ".") {
-        currentState = states[input];
         output<< currentState->name << " ";
         vector<string>nextWords;
         for (auto t:currentState->transitions) {
