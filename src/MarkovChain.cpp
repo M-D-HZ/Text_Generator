@@ -2,6 +2,7 @@
 #include <fstream>
 #include "MarkovChain.h"
 
+#include <time.h>
 #include <vector>
 #include <string>
 using namespace std;
@@ -80,10 +81,14 @@ void MarkovChain::addWord(State *s) {
 
 void MarkovChain::randomWalkAlgorithm(string &input) {
 
+    fstream output;
+    output.open("output.txt",ios::out|ios::trunc);
+
     int rand = 0;
 
     while (currentState->name != ".") {
         currentState = states[input];
+        output<< currentState->name << " ";
         vector<string>nextWords;
         for (auto t:currentState->transitions) {
             vector<string> v(t.second,t.first);
@@ -94,4 +99,7 @@ void MarkovChain::randomWalkAlgorithm(string &input) {
         int r = rand %size;
         currentState = states[nextWords[r]];
     }
+
+    output << currentState->name;
+    output.close();
 }
