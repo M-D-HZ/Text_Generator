@@ -6,9 +6,9 @@ using namespace std;
 
 int main(){
     string Filename = "Parse.txt";
-    MarkovChain Chain(Filename);
-    State* test = Chain.states["."];
+    MarkovChain chain(Filename);
+    MarkovState* test = chain.states["."];
 //    cout << "Poopie" << endl;
     string input = "I";
-    Chain.randomWalkAlgorithm(input);
+    chain.randomWalkAlgorithm(input);
 };

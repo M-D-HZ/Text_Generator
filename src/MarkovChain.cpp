@@ -18,7 +18,7 @@ MarkovChain::MarkovChain(string &filename) {
         return;
     }
     string PreviousWord;
-    State* PreviousWordState;
+    MarkovState* PreviousWordState;
     string Punctuation;
     bool repeat = false;
     while(outfile){
@@ -34,9 +34,9 @@ MarkovChain::MarkovChain(string &filename) {
             CurrentWord.erase(CurrentWord.size()-1);
             repeat = true;
         }
-        State* newstate;
+        MarkovState* newstate;
         if (!wordExists(CurrentWord)){                 /// if word hasn't been added to the states
-            newstate = new State(CurrentWord);         /// create a new state for current word
+            newstate = new MarkovState(CurrentWord);         /// create a new state for current word
             states[CurrentWord] = newstate;               /// Add the Currentword to our states
         }
         else{
@@ -65,7 +65,7 @@ MarkovChain::MarkovChain(string &filename) {
 // 3. doesn't exist: make new state + add to transitions of previous word + add to states of markovchain
 
 bool MarkovChain::wordExists(string &s) {
-    map<string,State*>::iterator it;
+    map<string,MarkovState*>::iterator it;
     it = states.find(s);
     if (it != states.end()) {
         return true;
@@ -75,7 +75,7 @@ bool MarkovChain::wordExists(string &s) {
     }
 }
 
-void MarkovChain::addWord(State *s) {
+void MarkovChain::addWord(MarkovState *s) {
     states[s->name] = s;
 }
 

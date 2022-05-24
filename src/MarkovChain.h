@@ -1,7 +1,7 @@
 #ifndef TOG_TXT_GENERATOR_MARKOVCHAIN_H
 #define TOG_TXT_GENERATOR_MARKOVCHAIN_H
 
-#include "State.h"
+#include "MarkovState.h"
 #include <map>
 using namespace std;
 
@@ -9,12 +9,15 @@ class MarkovChain {
 public:
     MarkovChain();
     MarkovChain(string &filename);
-    map<string,State*> states;
-    bool wordExists(string &s);
-    void addWord(State* s);
+
+    MarkovStatemap states;
     string outputFile;
+    MarkovState* currentState;
+
+    bool wordExists(string &s);
+
+    void addWord(MarkovState* s);
     void randomWalkAlgorithm(string &input);
-    State* currentState;
 };
 
 
