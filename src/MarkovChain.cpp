@@ -7,96 +7,113 @@
 #include <string>
 using namespace std;
 
-/// Empty constructor
-MarkovChain::MarkovChain() = default;
+
+//------------------------- Hulpfuncties ---------------------------------------//
+
+bool isPunctuation(char c){
+    if(c == '.' || c == ',' || c == '!' || c == ':' || c == '?' || c == '\n' || c == '(' || c == ')'){ // TODO: Dit moet korter en we moeten iets aan de haakjes doen :(
+        return true;
+    }
+    return false;
+}
 
 /// Train Markov chain constructor (parse txt file)
+/// \param filename: file waaruit geparsed wordt
 MarkovChain::MarkovChain(string &filename) {
+    // Read file
     fstream outfile;
-    outfile.open(filename);         /// open file to read
+    outfile.open(filename);
     if (!outfile.is_open()){
-        return;
+        cerr << "File not found!" << endl;
+        exit(5);
     }
-    string PreviousWord;
-    MarkovState* PreviousWordState;
-    string Punctuation;
-    bool repeat = false;
+
+    // Initialise Variables
+    MarkovState* previousWordState;
+    string previousWord;
+    string punctuation;
+    bool repeat;
+
+    // Reads file (word by word)
     while(outfile){
-        string CurrentWord;
+        string currentWord;
         if (!repeat){
-            getline(outfile,CurrentWord,' ');     /// Read out of file until u encounter ' '
+            // Parses word
+            //  -- (aka add char to string till you reach a space)
+            getline(outfile, currentWord, ' ');
         }
         else{
-            CurrentWord = Punctuation;
+            // Reached end of sentence (?) final word(?)
+            currentWord = punctuation;
         }
-        if (!repeat && CurrentWord[CurrentWord.size()-1] == '.' or !repeat && CurrentWord[CurrentWord.size()-1] == ','){
-            Punctuation = CurrentWord[CurrentWord.size()-1];
-            CurrentWord.erase(CurrentWord.size()-1);
+        if (!repeat && isPunctuation(currentWord[currentWord.size() - 1])){
+            // Removes punctuation from the current word and saves the used punctuation
+            punctuation = currentWord[currentWord.size() - 1];
+            currentWord.erase(currentWord.size() - 1);
             repeat = true;
         }
-        MarkovState* newstate;
-        if (!wordExists(CurrentWord)){                 /// if word hasn't been added to the states
-            newstate = new MarkovState(CurrentWord);         /// create a new state for current word
-            states[CurrentWord] = newstate;               /// Add the Currentword to our states
+
+        MarkovState* currentWordState;
+        if (!wordExists(currentWord)){
+            // create a new state for current (new) word and add it to the state map
+            currentWordState = new MarkovState(currentWord);
+            states[currentWord] = currentWordState;
         }
-        else{
-            newstate = states[CurrentWord];               /// else if it exsits make newstates a pointer to that state
+        else{  // else if it exists make currentWordState a pointer to that state
+            currentWordState = states[currentWord];
         }
-        if (!PreviousWord.empty()){                       /// if this isnt the first word
-            if (PreviousWordState->transitionExists(CurrentWord)){      /// Check if the previous word has transitions
-                PreviousWordState->addTransition(CurrentWord);          /// if it has transitions on the current word, Add to it
-            }
-            else{
-                PreviousWordState->newTransition(newstate);         /// Else create a new transition for the current word
-            }
+        if (!previousWord.empty()){ // Not the first word
+            // Add a transition to the previousWordState
+            previousWordState->addTransition(currentWordState);
         }
-        if (CurrentWord == Punctuation){
+        if (currentWord == punctuation){
             repeat = false;
         }
-        PreviousWord = CurrentWord;                      /// Set the previous word to Current word
-        PreviousWordState = newstate;                    /// Set the state of the previous word to the state we used
+
+        // Update previousWord variables
+        previousWord        = currentWord;
+        previousWordState   = currentWordState;
     }
     outfile.close();
 }
 
-
-// check if state already exists
-// 2. exists: add to transitions of previous word (state)
-// 3. doesn't exist: make new state + add to transitions of previous word + add to states of markovchain
-
-bool MarkovChain::wordExists(string &s) {
-    map<string,MarkovState*>::iterator it;
-    it = states.find(s);
-    if (it != states.end()) {
-        return true;
-    }
-    else {
-        return false;
-    }
+/// checks if the state already exists
+/// \param word word (name of the state)
+/// \return boolean indicating its existence
+bool MarkovChain::wordExists(string &word) {
+    return states.find(word) != states.end();
 }
 
-void MarkovChain::addWord(MarkovState *s) {
-    states[s->name] = s;
+/// Adds a word/state to the word/state list
+/// \param state name of the new word/state
+void MarkovChain::addWord(MarkovState *state) {
+    states[state->name] = state;
 }
 
 void MarkovChain::randomWalkAlgorithm(string &input) {
-
+    if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
+        cerr<< "This word is not supported as begin!" << endl;
+        exit(5);
+    }
+    // Create outputfile
     fstream output;
     output.open("output.txt",ios::out|ios::trunc);
     currentState = states[input];
-    int rand = 0;
 
-    while (currentState->name != ".") {
-        vector<string>nextWords;
-        for (auto t:currentState->transitions) {
-            vector<string> v(t.second,t.first);
+    // Main loop begint met input
+    while (!isPunctuation(currentState->name[currentState->name.size() - 1])) {
+        vector<string> nextWords;
+        for (auto transitionpair:currentState->transitions) {
+            vector<string> v(transitionpair.second, transitionpair.first);
             nextWords.insert(nextWords.end(), v.begin(), v.end());
         }
         int size = nextWords.size();
+
         srand((int)time(0));
-        int r = rand %size;
+        int r = rand() %size;
+
         output<< currentState->name;
-        if (states[nextWords[r]]->name != ".") {
+        if (!isPunctuation(states[nextWords[r]]->name[states[nextWords[r]]->name.size() - 1])) {
             output<< " ";
         }
         currentState = states[nextWords[r]];

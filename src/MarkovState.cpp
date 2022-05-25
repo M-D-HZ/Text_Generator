@@ -27,9 +27,12 @@ void MarkovState::newTransition(MarkovState *destinationState) {
 
 /// Verhoogt "kans" dat de transitie gebeurt
 /// \param statename: naam van de state
-void MarkovState::addTransition(string &statename) {
-    if (transitionExists(statename)) {
-        int count = transitions[statename];
-        transitions[statename] = count + 1;
+void MarkovState::addTransition(MarkovState *destinationState) {
+    if (transitionExists(destinationState->name)) {
+        int count = transitions[destinationState->name];
+        transitions[destinationState->name] = count + 1;
+    }
+    else{
+        newTransition(destinationState);
     }
 }

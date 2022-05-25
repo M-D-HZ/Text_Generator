@@ -14,11 +14,12 @@ public:
     map<string, int> transitions;
 
     MarkovState(string& statename);
+    ~MarkovState()=default;
 
     bool transitionExists(string &statename);
 
     void newTransition(MarkovState* destinationState);
-    void addTransition(string &statename);
+    void addTransition(MarkovState* destinationState);
 };
 
 typedef map<string, MarkovState*> MarkovStatemap;
