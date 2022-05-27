@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/TOg_TXT_Generator.iml" filepath="$PROJECT_DIR$/.idea/TOg_TXT_Generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TOg_TXT_Generator2.iml" filepath="$PROJECT_DIR$/.idea/TOg_TXT_Generator2.iml" />
     </modules>
   </component>
 </project>

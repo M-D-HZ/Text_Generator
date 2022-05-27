@@ -1,0 +1,17 @@
+TO DO:
+
+Als je iets gaat maken zet je naam erbij.
+Als iets af is zet er een @ bij.
+
+-Inlezen
+
+-	Omzetting van een n-word chain naar 1-word chain        : Jay
+-	Bettere Tekst voor inlezen, beide engels en nederlands
+-	Haakjes negeren bij het vinden in de tekst
+
+- Random walk algorithm
+-	Bij het outputten van tekst een optie geven voor kleine, middelmatige en grote
+
+-Input
+-	Tekst input krijgen voor markov door user
+-	GUI Maken                                               : Yousra

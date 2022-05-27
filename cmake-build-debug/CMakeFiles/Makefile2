@@ -53,7 +53,6 @@ CMAKE_BINARY_DIR = /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TA
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/TOI.dir/all
 all: CMakeFiles/Markovchain.dir/all
 
 .PHONY : all
@@ -64,37 +63,9 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/TOI.dir/clean
 clean: CMakeFiles/Markovchain.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/TOI.dir
-
-# All Build rule for target.
-CMakeFiles/TOI.dir/all:
-	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/depend
-	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target TOI"
-.PHONY : CMakeFiles/TOI.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/TOI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles 14
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TOI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/TOI.dir/rule
-
-# Convenience name for target.
-TOI: CMakeFiles/TOI.dir/rule
-
-.PHONY : TOI
-
-# clean rule for target.
-CMakeFiles/TOI.dir/clean:
-	$(MAKE) -f CMakeFiles/TOI.dir/build.make CMakeFiles/TOI.dir/clean
-.PHONY : CMakeFiles/TOI.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Markovchain.dir

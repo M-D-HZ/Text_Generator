@@ -9,6 +9,6 @@ int main(){
     MarkovChain chain(Filename);
     MarkovState* test = chain.states["."];
 //    cout << "Poopie" << endl;
-    string input = "I";
+    string input = "the";
     chain.randomWalkAlgorithm(input);
 };
