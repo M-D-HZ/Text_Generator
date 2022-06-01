@@ -11,6 +11,7 @@ Als iets af is zet er een @ bij.
 
 - Random walk algorithm
 -	Bij het outputten van tekst een optie geven voor kleine, middelmatige en grote          : Chloe
+-   Oplossing vinden voor het steeds herhalen van woorden of woordgroepen achter elkaar
 
 -Input
 -	Tekst input krijgen voor markov door user // is de parse
