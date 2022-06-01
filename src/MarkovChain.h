@@ -17,7 +17,7 @@ public:
     bool wordExists(string &word);
 
     void addWord(MarkovState* state);
-    void randomWalkAlgorithm(string &input,int size);
+    void randomWalkAlgorithm(string &input,int size = 0);
 };
 
 

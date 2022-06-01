@@ -91,7 +91,7 @@ void MarkovChain::addWord(MarkovState *state) {
     states[state->name] = state;
 }
 
-void MarkovChain::randomWalkAlgorithm(string &input,int size = 0) {
+void MarkovChain::randomWalkAlgorithm(string &input,int size) {
     if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
         cerr<< "This word is not supported as begin!" << endl;
         exit(5);
