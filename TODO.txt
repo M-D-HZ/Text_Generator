@@ -7,11 +7,11 @@ Als iets af is zet er een @ bij.
 
 -	Omzetting van een n-word chain naar 1-word chain        : Jay
 -	Bettere Tekst voor inlezen, beide engels en nederlands
--	Haakjes negeren bij het vinden in de tekst
+-	Haakjes negeren bij het vinden in de tekst              : Uit de ifstatement gehaald Chloe,anass
 
 - Random walk algorithm
 -	Bij het outputten van tekst een optie geven voor kleine, middelmatige en grote
 
 -Input
--	Tekst input krijgen voor markov door user
+-	Tekst input krijgen voor markov door user // is de parse
 -	GUI Maken                                               : Yousra

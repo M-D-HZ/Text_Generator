@@ -12,7 +12,7 @@ using namespace std;
 
 bool isPunctuation(char c){
 //    vector<char> test = {'.',',','!',':','?','\n','(',')'};  Gebruik find voor ifstatement
-    if(c == '.' || c == ',' || c == '!' || c == ':' || c == '?' || c == '\n' || c == '(' || c == ')'){ // TODO: Dit moet korter en we moeten iets aan de haakjes doen :(
+    if(c == '.' || c == ',' || c == '!' || c == ':' || c == '?' || c == '\n'){ // TODO: Dit moet korter en we moeten iets aan de haakjes doen :(
         return true;
     }
     return false;
