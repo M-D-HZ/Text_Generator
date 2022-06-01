@@ -91,7 +91,7 @@ void MarkovChain::addWord(MarkovState *state) {
     states[state->name] = state;
 }
 
-void MarkovChain::randomWalkAlgorithm(string &input) {
+void MarkovChain::randomWalkAlgorithm(string &input,int size = 0) {
     if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
         cerr<< "This word is not supported as begin!" << endl;
         exit(5);
@@ -101,8 +101,24 @@ void MarkovChain::randomWalkAlgorithm(string &input) {
     output.open("output.txt",ios::out|ios::trunc);
     currentState = states[input];
 
+    bool stoppen = false;
+    int amountOfPeriods = 0;
+    int amountOfSentences = 0;
+    if (size == 0) {
+        amountOfSentences = 1;
+    }
+    else if (size == 1) {
+        amountOfSentences = 5;
+    }
+    else if (size == 2) {
+        amountOfSentences = 10;
+    }
+    else {
+        amountOfSentences = 20;
+    }
+
     // Main loop begint met input
-    while (!isPunctuation(currentState->name[currentState->name.size() - 1])) {
+    while (!stoppen) {
         vector<string> nextWords;
         for (auto transitionpair:currentState->transitions) {
             vector<string> v(transitionpair.second, transitionpair.first);
@@ -114,10 +130,17 @@ void MarkovChain::randomWalkAlgorithm(string &input) {
         int r = rand() %size;
 
         output<< currentState->name;
-        if (!isPunctuation(states[nextWords[r]]->name[states[nextWords[r]]->name.size() - 1])) {
+        if (states[nextWords[r]]->name[states[nextWords[r]]->name.size() - 1] != '.') {
             output<< " ";
         }
         currentState = states[nextWords[r]];
+
+        if (states[nextWords[r]]->name[states[nextWords[r]]->name.size() - 1] == '.') {
+            amountOfPeriods += 1;
+            if (amountOfPeriods == amountOfSentences) {
+                stoppen = true;
+            }
+        }
     }
 
     output << currentState->name;

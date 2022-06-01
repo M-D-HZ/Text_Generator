@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Markovchain">
-				<Option output="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option output="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Markovchain/fast">
-				<Option output="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug"/>
+				<Option output="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Markovchain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,29 +75,29 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 Markovchain/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/chloeacm/TextGenerator/TOg_TXT_Generator/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/MarkovChain.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/MarkovChain.cpp">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/MarkovChain.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/MarkovChain.h">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/MarkovState.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/MarkovState.cpp">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/MarkovState.h">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/MarkovState.h">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/src/main.cpp">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/src/main.cpp">
 			<Option target="Markovchain"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/othma/OneDrive/Documents/School/UA_1BINF_SEM2/TAL/TOg/TOg_TXT_Generator/CMakeLists.txt">
+		<Unit filename="/home/chloeacm/TextGenerator/TOg_TXT_Generator/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
