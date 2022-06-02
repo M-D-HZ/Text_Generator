@@ -5,10 +5,10 @@
 using namespace std;
 
 int main(){
-    string Filename = "Parse.txt";
+    string Filename = "MonkBoek.txt";
     MarkovChain chain(Filename);
-    MarkovState* test = chain.states["."];
+    MarkovState* test = chain.states["I"];
 //    cout << "Poopie" << endl;
-    string input = "the";
-    chain.randomWalkAlgorithm(input);
+    string input = "I";
+    chain.randomWalkAlgorithm(input,0);
 };
