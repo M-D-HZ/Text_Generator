@@ -15,7 +15,7 @@ using namespace std;
 //------------------------- Hulpfuncties ---------------------------------------//
 
 bool isPunctuation(char c) {
-    vector<char> chars = {'.', ',', '!', ':', '?', '\n', '(', ')'};
+    vector<char> chars = {'.', ',', '!', ':', '?', '\n'};
     vector<char>::iterator it;
     it = find(chars.begin(), chars.end(), c);
     if (it != chars.end()) {
