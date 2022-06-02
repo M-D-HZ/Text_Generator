@@ -9,7 +9,6 @@ using namespace std;
 class MarkovState {
 public:
     string name;
-
     map<string,MarkovState*> nextStates;
     map<string, int> transitions;
 

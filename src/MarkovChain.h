@@ -1,10 +1,11 @@
 #ifndef TOG_TXT_GENERATOR_MARKOVCHAIN_H
 #define TOG_TXT_GENERATOR_MARKOVCHAIN_H
 
-#include "MarkovState.h"
+#include "Parser.h"
 #include <map>
 using namespace std;
 
+class MarkovState;
 class MarkovChain {
 public:
     MarkovChain() = default;
@@ -15,7 +16,6 @@ public:
     MarkovState* currentState;
 
     bool wordExists(string &word);
-
     void addWord(MarkovState* state);
     void randomWalkAlgorithm(string &input,int size = 0);
 };
