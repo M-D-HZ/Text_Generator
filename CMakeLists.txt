@@ -11,6 +11,8 @@ set(SRC_FILES
         src/MarkovChain.cpp src/MarkovChain.h
         src/Parser.cpp src/Parser.h
         src/MarkovState.cpp src/MarkovState.h
+        src/HigherOrderMarkovChain.h src/HigherOrderMarkovChain.cpp
+        src/HigherOrderMarkovState.h src/HigherOrderMarkovState.cpp
         GUI/MainGuiWindow.h GUI/MainGuiWindow.cpp
         )
 
