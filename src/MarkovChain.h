@@ -14,7 +14,8 @@ public:
     MarkovStatemap states;
     string outputFile;
     MarkovState* currentState;
-
+    bool IsUncommonWord(string &word);
+    bool LowerChance(string &word, vector<MarkovState*> PrevWords);
     bool wordExists(string &word);
     void addWord(MarkovState* state);
     void randomWalkAlgorithm(string &input,int size = 0);

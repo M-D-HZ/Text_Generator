@@ -103,6 +103,7 @@ void MainGuiWindow::retranslateUi(QMainWindow *MainWindow) {
     MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
     GenerateText->setText(QCoreApplication::translate("MainWindow", "Generate Text", nullptr));
 }
+
 string FindLastWord(){
     fstream outfile;
     outfile.open("Input.txt");
@@ -156,7 +157,6 @@ void MainGuiWindow::On_GenerateText_Clicked() {
 }
 
 void MainGuiWindow::On_SaveText_Clicked(){
-    cout << "hahaha u tried to save bozo" << endl;
     QString filename = QFileDialog::getSaveFileName(this);
     QFile InFile(filename);
     InFile.open(QFile::WriteOnly | QFile::Text);
@@ -169,6 +169,5 @@ void MainGuiWindow::On_SaveText_Clicked(){
 }
 
 void MainGuiWindow::On_ClearText_Clicked(){
-    cout << "hahaha u tried to clear bozo" << endl;
     textEdit_2->setPlainText("");
 }

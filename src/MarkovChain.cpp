@@ -4,6 +4,7 @@
 #include "MarkovState.h"
 #include "Parser.h"
 
+#include <windows.h>
 #include <time.h>
 #include <vector>
 #include <string>
@@ -29,6 +30,7 @@ bool isPunctuation(char c) {
 MarkovChain::MarkovChain(string &filename) {
     Parser parser(filename);
     states = parser.getStates();
+    cout << states.size() << endl;
 
 //    // Read file
 //    fstream outfile;
@@ -98,6 +100,22 @@ void MarkovChain::addWord(MarkovState *state) {
     states[state->name] = state;
 }
 
+bool MarkovChain::IsUncommonWord(string &word){
+    if (word.size() >= 3){
+        return true;
+    }
+    return false;
+}
+
+bool MarkovChain::LowerChance(string &word, vector<MarkovState*> PrevWords){
+    for (auto &b:PrevWords){
+        if (b->name == word && IsUncommonWord(word)){
+            return true;
+        }
+    }
+    return false;
+}
+
 void MarkovChain::randomWalkAlgorithm(string &input,int size) {
     if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
         cerr<< "This word is not supported as begin!" << endl;
@@ -107,7 +125,7 @@ void MarkovChain::randomWalkAlgorithm(string &input,int size) {
     fstream output;
     output.open("output.txt", ios::out | ios::trunc);
     currentState = states[input];
-
+    vector<MarkovState*> Prevwords;
     bool stoppen = false;
     int amountOfPeriods = 0;
     int amountOfSentences = 0;
@@ -120,15 +138,18 @@ void MarkovChain::randomWalkAlgorithm(string &input,int size) {
     else if (size == 2) {
         amountOfSentences = 10;
     }
-    else {
-        amountOfSentences = 20;
-    }
 
     // Main loop begint met input
     while (!stoppen) {
+        Prevwords.push_back(currentState);
         vector<string> nextWords;
         for (const auto &transitionPair: currentState->transitions) {
-            vector<string> v(transitionPair.second, transitionPair.first);
+            int Checkup = transitionPair.second;
+            string word = transitionPair.first;
+            if (LowerChance(word,Prevwords) && Checkup != 0){
+                Checkup--;
+            }
+            vector<string> v(Checkup, word);
             nextWords.insert(nextWords.end(), v.begin(), v.end());
         }
         int size = nextWords.size();
@@ -143,6 +164,7 @@ void MarkovChain::randomWalkAlgorithm(string &input,int size) {
         currentState = states[nextWords[r]];
 
         if (states[nextWords[r]]->name[states[nextWords[r]]->name.size() - 1] == '.') {
+            Prevwords.clear();
             amountOfPeriods += 1;
             if (amountOfPeriods == amountOfSentences) {
                 stoppen = true;

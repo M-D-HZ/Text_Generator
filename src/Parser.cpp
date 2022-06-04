@@ -8,6 +8,8 @@
 Parser::Parser() = default;
 
 Parser::Parser(const string &filename) {
+    test(filename);
+    /*
     fstream file;
     file.open(filename);
     if (!file.is_open()){
@@ -47,15 +49,15 @@ Parser::Parser(const string &filename) {
         if (currentWord == punctiation){
             repeat = false;
         }
-
         previousWord = currentWord;
         pWordState = currentWordState;
     }
     file.close();
+     */
 }
 
 bool Parser::isPunctuation(char c) const {
-    vector<char> chars = {'.', ',', '!', ':', '?', '\n', '(', ')'};
+    vector<char> chars = {'.',',', '!', ':', '?', '(', ')'};
     vector<char>::iterator it;
     it = find(chars.begin(), chars.end(), c);
     if (it != chars.end()){
