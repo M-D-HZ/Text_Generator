@@ -3,6 +3,7 @@
 > ## Disclaimer
 >
 > In its very early stages ... Please don't judge yet!
+> Qt is needed for this project!!
 
 ## 👥 Team
 
