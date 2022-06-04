@@ -175,3 +175,48 @@ void MarkovChain::randomWalkAlgorithm(string &input,int size) {
     output << currentState->name;
     output.close();
 }
+
+void MarkovChain::testWalk(string &input) {
+    if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
+        cerr<< "This word is not supported as begin!" << endl;
+        exit(5);
+    }
+    vector<MarkovState*> Prevwords;
+    vector<string> gegenereerdeT;
+    currentState = states[input];
+    gegenereerdeT.push_back(currentState->name);
+    int i = 0;
+    while (i < 100) {
+        vector<string> nextWords;
+        for (const auto &transitionPair: currentState->transitions) {
+            int Checkup = transitionPair.second;
+            string word = transitionPair.first;
+            if (LowerChance(word,Prevwords) && Checkup != 0){
+                Checkup--;
+            }
+            vector<string> v(Checkup, word);
+            nextWords.insert(nextWords.end(), v.begin(), v.end());
+        }
+        int size = nextWords.size();
+        srand((int) time(0));
+        int r = rand() % size;
+        currentState = states[nextWords[r]];
+        gegenereerdeT.push_back(currentState->name);
+        i++;
+        Sleep(50);
+    }
+    print(gegenereerdeT);
+}
+
+void MarkovChain::print(vector<string> ggT) {
+    fstream output;
+    output.open("output.txt", ios::out | ios::trunc);
+    Parser hulp;
+    for (auto &w : ggT){
+        if (!hulp.isPunctuation(w[w.size()-1])){
+            output << " ";
+        }
+        output << w;
+    }
+    output.close();
+}

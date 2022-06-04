@@ -13,13 +13,12 @@ class Parser {
 public:
     Parser();
     Parser(const string &filename);
-
     const MarkovStatemap &getStates() const;
+    bool isPunctuation(char c) const;
 
 private:
     MarkovStatemap states;
-
-    bool isPunctuation(char c) const;
+    void test(const string &filename);
     bool wordExists(string &word);
 };
 

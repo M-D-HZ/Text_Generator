@@ -16,7 +16,6 @@ public:
     ~MarkovState()=default;
 
     bool transitionExists(string &statename);
-
     void newTransition(MarkovState* destinationState);
     void addTransition(MarkovState* destinationState);
 };
