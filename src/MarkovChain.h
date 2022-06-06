@@ -7,6 +7,8 @@ using namespace std;
 
 class MarkovState;
 class MarkovChain {
+private:
+    int index = 0;
 public:
     MarkovChain() = default;
     MarkovChain(string &filename);
@@ -20,7 +22,7 @@ public:
     void addWord(MarkovState* state);
     void randomWalkAlgorithm(string &input,int size = 0);
 
-    void testWalk(string &input);
+    void testWalk(string &input, int size);
     void print(vector<string> ggT);
 };
 

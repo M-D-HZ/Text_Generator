@@ -57,7 +57,7 @@ Parser::Parser(const string &filename) {
 }
 
 bool Parser::isPunctuation(char c) const {
-    vector<char> chars = {'.',',', '!', ':', '?', '(', ')'};
+    vector<char> chars = {'.', ',', '!', ':', '?', '\n', ';'};
     vector<char>::iterator it;
     it = find(chars.begin(), chars.end(), c);
     if (it != chars.end()){
@@ -94,6 +94,12 @@ void Parser::test(const string &filename){
     // Reading file
     while (file){
         getline(file, currentWord, ' ');
+        if (currentWord == "\n"){
+            continue;
+        }
+        if (currentWord[-2] == '\\') {
+            currentWord.erase(currentWord.size()-2, currentWord.size()-1);
+        }
         if (isPunctuation(currentWord[currentWord.size()-1])) {
             punctiation = currentWord[currentWord.size()-1];
             currentWord.erase(currentWord.size()-1);
@@ -128,5 +134,4 @@ void Parser::test(const string &filename){
         }
     }
     file.close();
-
 }

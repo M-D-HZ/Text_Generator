@@ -4,7 +4,8 @@
 #include "MarkovState.h"
 #include "Parser.h"
 
-#include <windows.h>
+#include "unistd.h"
+#include "random"
 #include <time.h>
 #include <vector>
 #include <string>
@@ -176,7 +177,7 @@ void MarkovChain::randomWalkAlgorithm(string &input,int size) {
     output.close();
 }
 
-void MarkovChain::testWalk(string &input) {
+void MarkovChain::testWalk(string &input, int size) {
     if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
         cerr<< "This word is not supported as begin!" << endl;
         exit(5);
@@ -185,25 +186,39 @@ void MarkovChain::testWalk(string &input) {
     vector<string> gegenereerdeT;
     currentState = states[input];
     gegenereerdeT.push_back(currentState->name);
-    int i = 0;
-    while (i < 100) {
+
+    bool stoppen = false;
+    int amountOfPeriods = 0;
+    int amountOfSentences = 0;
+    if (size == 0) {
+        amountOfSentences = 1;
+    }
+    else if (size == 1) {
+        amountOfSentences = 5;
+    }
+    else if (size == 2) {
+        amountOfSentences = 10;
+    }
+    while (!stoppen) {
         vector<string> nextWords;
         for (const auto &transitionPair: currentState->transitions) {
-            int Checkup = transitionPair.second;
-            string word = transitionPair.first;
-            if (LowerChance(word,Prevwords) && Checkup != 0){
-                Checkup--;
-            }
-            vector<string> v(Checkup, word);
+            vector<string> v(transitionPair.second, transitionPair.first);
             nextWords.insert(nextWords.end(), v.begin(), v.end());
         }
-        int size = nextWords.size();
+        int v_size = nextWords.size();
         srand((int) time(0));
-        int r = rand() % size;
+        index += rand() % 1000;
+        int r = index % v_size;
+
+        std::cout << nextWords[r] << " \tindex:" << r << std::endl;
         currentState = states[nextWords[r]];
         gegenereerdeT.push_back(currentState->name);
-        i++;
-        Sleep(50);
+        if (states[nextWords[r]]->name[states[nextWords[r]]->name.size() - 1] == '.') {
+            amountOfPeriods += 1;
+            if (amountOfPeriods == amountOfSentences) {
+                stoppen = true;
+            }
+        }
     }
     print(gegenereerdeT);
 }

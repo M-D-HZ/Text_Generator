@@ -12,7 +12,6 @@ set(SRC_FILES
         src/MarkovState.cpp src/MarkovState.h
 #        src/HigherOrderMarkovChain.h src/HigherOrderMarkovChain.cpp
 #        src/HigherOrderMarkovState.h src/HigherOrderMarkovState.cpp
-        GUI/MainGuiWindow.h GUI/MainGuiWindow.cpp
         )
 
 

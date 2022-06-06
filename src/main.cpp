@@ -7,15 +7,14 @@
 using namespace std;
 
 int main(int argc, char *argv[]){
-    cout << "test" << endl;
 //    QApplication a(argc, argv);
 //    MainGuiWindow* GUI = new MainGuiWindow();
 //    QMainWindow* QM = new QMainWindow();
 //    GUI->setupUi(QM);
-    string Filename = "MonkBoek.txt";
+    string Filename = "Parse.txt";
     MarkovChain chain(Filename);
-    string input = "I";
-    chain.testWalk(input);
+    string input = "We";
+    chain.testWalk(input, 1);
 //    chain.randomWalkAlgorithm(input,1);
 //    QM->show();
 //    return a.exec();
