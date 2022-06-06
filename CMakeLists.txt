@@ -20,7 +20,7 @@ find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
 
 add_executable(${PROJECT_NAME} src/main.cpp src/MarkovChain.cpp src/MarkovChain.h
         src/Parser.cpp src/Parser.h
-        src/MarkovState.cpp src/MarkovState.h)
+        src/MarkovState.cpp src/MarkovState.h GUI/MainGuiWindow.cpp GUI/MainGuiWindow.h)
 target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Widgets)
 
 

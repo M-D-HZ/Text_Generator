@@ -144,7 +144,7 @@ void MainGuiWindow::On_GenerateText_Clicked() {
         textEdit_2->setPlainText("Word does not exist in library");
         return;
     }
-    chain.randomWalkAlgorithm(input,comboBox->currentIndex());
+    chain.testWalk(input,comboBox->currentIndex());
 
 //    QString filename = QFileDialog::getOpenFileName(this,"output.txt");
     QFile OutFile("output.txt");
@@ -158,6 +158,7 @@ void MainGuiWindow::On_GenerateText_Clicked() {
 
 void MainGuiWindow::On_SaveText_Clicked(){
     QString filename = QFileDialog::getSaveFileName(this);
+    filename.push_back(".txt");
     QFile InFile(filename);
     InFile.open(QFile::WriteOnly | QFile::Text);
     QTextStream out(&InFile);
