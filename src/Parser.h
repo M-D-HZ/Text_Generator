@@ -18,7 +18,7 @@ public:
 
 private:
     MarkovStatemap states;
-    void test(const string &filename);
+    void MarkovChainParser(const string &filename);
     bool wordExists(string &word);
 };
 

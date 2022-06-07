@@ -8,52 +8,7 @@
 Parser::Parser() = default;
 
 Parser::Parser(const string &filename) {
-    test(filename);
-    /*
-    fstream file;
-    file.open(filename);
-    if (!file.is_open()){
-        cerr << "File is not found!" << endl;
-        exit(5);
-    }
-
-    // Basic variables
-    MarkovState *pWordState;
-    string currentWord;
-    string previousWord;
-    string punctiation;
-    bool repeat;
-
-    // Reading file (with use of Regular Expressions)
-    while (file){
-        if (!repeat){
-            getline(file, currentWord, ' ');
-        } else {
-            currentWord = punctiation;
-        }
-        if (!repeat && isPunctuation(currentWord[currentWord.size()-1])){
-            punctiation = currentWord[currentWord.size()-1];
-            currentWord.erase(currentWord.size() -1);
-            repeat = true;
-        }
-        MarkovState *currentWordState;
-        if (!wordExists(currentWord)){
-            currentWordState = new MarkovState(currentWord);
-            states[currentWord] = currentWordState;
-        } else{
-            currentWordState = states[currentWord];
-        }
-        if (!previousWord.empty()){
-            pWordState->addTransition(currentWordState);
-        }
-        if (currentWord == punctiation){
-            repeat = false;
-        }
-        previousWord = currentWord;
-        pWordState = currentWordState;
-    }
-    file.close();
-     */
+    MarkovChainParser(filename);
 }
 
 bool Parser::isPunctuation(char c) const {
@@ -74,7 +29,7 @@ const MarkovStatemap &Parser::getStates() const {
     return states;
 }
 
-void Parser::test(const string &filename){
+void Parser::MarkovChainParser(const string &filename){
     fstream file;
     file.open(filename);
     if (!file.is_open()){
@@ -83,7 +38,6 @@ void Parser::test(const string &filename){
     }
 
     // Basic variables
-    MarkovState *pWordState;
     vector<MarkovState*> sentence;
     MarkovState* Punction;
     string currentWord;

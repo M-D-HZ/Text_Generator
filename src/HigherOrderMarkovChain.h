@@ -20,7 +20,6 @@ public:
     void addState(string &name);
     HigherOrderMarkovState* getState(string &name);
     void removeState(string &name);
-    void setTransition(string &name1, vector<string> prev_name1, string &name2, double chance);
     string getRandomState();
     MarkovChain toFirstOrder();
     bool stateExists(string &name);

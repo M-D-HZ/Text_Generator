@@ -79,9 +79,7 @@ MarkovChain HigherOrderMarkovChain::toFirstOrder() {
     return markovChain;
 }
 
-void HigherOrderMarkovChain::setTransition(string &name1, vector<string> prev_name1, string &name2, double chance) {
 
-}
 
 string HigherOrderMarkovChain::getRandomState() {
     double chance = 1.0 / states.size();

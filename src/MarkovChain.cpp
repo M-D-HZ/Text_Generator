@@ -4,8 +4,8 @@
 #include "MarkovState.h"
 #include "Parser.h"
 
-#include "unistd.h"
-#include "random"
+#include "unistd.h" // random lib voor Linux
+#include "random"   // random lib voor windows
 #include <time.h>
 #include <vector>
 #include <string>
@@ -16,6 +16,11 @@ using namespace std;
 
 //------------------------- Hulpfuncties ---------------------------------------//
 
+/**
+ * Controleert of een character een leesteken is.
+ * @param c character
+ * @return boolean
+ */
 bool isPunctuation(char c) {
     vector<char> chars = {'.', ',', '!', ':', '?', '\n'};
     vector<char>::iterator it;
@@ -31,61 +36,6 @@ bool isPunctuation(char c) {
 MarkovChain::MarkovChain(string &filename) {
     Parser parser(filename);
     states = parser.getStates();
-    cout << states.size() << endl;
-
-//    // Read file
-//    fstream outfile;
-//    outfile.open(filename);
-//    if (!outfile.is_open()) {
-//        cerr << "File not found!" << endl;
-//        exit(5);
-//    }
-//
-//    // Initialise Variables
-//    MarkovState *previousWordState;
-//    string previousWord;
-//    string punctuation;
-//    bool repeat;
-//
-//    // Reads file (word by word)
-//    while (outfile) {
-//        string currentWord;
-//        if (!repeat) {
-//            // Parses word
-//            //  -- (aka add char to string till you reach a space)
-//            getline(outfile, currentWord, ' ');
-//        } else {
-//            // Reached end of sentence (?) final word(?)
-//            currentWord = punctuation;
-//        }
-//        if (!repeat && isPunctuation(currentWord[currentWord.size() - 1])) {
-//            // Removes punctuation from the current word and saves the used punctuation
-//            punctuation = currentWord[currentWord.size() - 1];
-//            currentWord.erase(currentWord.size() - 1);
-//            repeat = true;
-//        }
-//
-//        MarkovState *currentWordState;
-//        if (!wordExists(currentWord)) {
-//            // create a new state for current (new) word and add it to the state map
-//            currentWordState = new MarkovState(currentWord);
-//            states[currentWord] = currentWordState;
-//        } else {  // else if it exists make currentWordState a pointer to that state
-//            currentWordState = states[currentWord];
-//        }
-//        if (!previousWord.empty()) { // Not the first word
-//            // Add a transition to the previousWordState
-//            previousWordState->addTransition(currentWordState);
-//        }
-//        if (currentWord == punctuation) {
-//            repeat = false;
-//        }
-//
-//        // Update previousWord variables
-//        previousWord = currentWord;
-//        previousWordState = currentWordState;
-//    }
-//    outfile.close();
 }
 
 /// checks if the state already exists
@@ -117,6 +67,15 @@ bool MarkovChain::LowerChance(string &word, vector<MarkovState*> PrevWords){
     return false;
 }
 
+/**
+ * Eerste versie van randomWalkAlgoritme.
+ * Zie XXX voor laatste versie.
+ * @param input Naam van de state.
+ * @param size In relatie met het aantal zinnen die geconstrueerd moeten worden.
+ * 0: Één zin.
+ * 1: Vijf zinnen.
+ * 2: Tien zinnen.
+ */
 void MarkovChain::randomWalkAlgorithm(string &input,int size) {
     if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
         cerr<< "This word is not supported as begin!" << endl;
@@ -172,11 +131,18 @@ void MarkovChain::randomWalkAlgorithm(string &input,int size) {
             }
         }
     }
-
     output << currentState->name;
     output.close();
 }
 
+/**
+ * Verbeterde versie van randomWalkAlgoritme.
+ * @param input Naam van de state.
+ * @param size In relatie met het aantal zinnen die geconstrueerd moeten worden.
+ * 0: Één zin.
+ * 1: Vijf zinnen.
+ * 2: Tien zinnen.
+ */
 void MarkovChain::testWalk(string &input, int size) {
     if (!wordExists(input)){ // Woord kan niet gebruikt worden als begin van een zin
         cerr<< "This word is not supported as begin!" << endl;
@@ -210,7 +176,6 @@ void MarkovChain::testWalk(string &input, int size) {
         index += rand() % 1000;
         int r = index % v_size;
 
-        std::cout << nextWords[r] << " \tindex:" << r << std::endl;
         currentState = states[nextWords[r]];
         gegenereerdeT.push_back(currentState->name);
         if (states[nextWords[r]]->name[states[nextWords[r]]->name.size() - 1] == '.') {
@@ -227,11 +192,15 @@ void MarkovChain::print(vector<string> ggT) {
     fstream output;
     output.open("output.txt", ios::out | ios::trunc);
     Parser hulp;
+    int c = 0;
     for (auto &w : ggT){
         if (!hulp.isPunctuation(w[w.size()-1])){
-            output << " ";
+            if (c != 0){
+                output << " ";
+            }
         }
         output << w;
+        c++;
     }
     output.close();
 }
