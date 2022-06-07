@@ -21,9 +21,6 @@ void HigherOrderMarkovChain::setOrder(int order) {
     HigherOrderMarkovChain::order = order;
 }
 
-HigherOrderMarkovChain::HigherOrderMarkovChain(int ord) {
-    order = ord;
-}
 
 void HigherOrderMarkovChain::addState(string &name) {
 //    if (stateExists(name)) return;
@@ -55,7 +52,7 @@ MarkovChain HigherOrderMarkovChain::toFirstOrder() {
                 new_state_names.push_back(prev_state->getName());
             }
             new_state_names.push_back(state->getName());
-            // push to markovChain
+            markovChain.addFirstOrder(new_state_names);
         }
     }
 
@@ -98,4 +95,13 @@ HigherOrderMarkovState *HigherOrderMarkovChain::getState(string &name) {
         if (state->getName() == name) return state;
     }
     return nullptr;
+}
+
+bool HigherOrderMarkovChain::stateExists(string &name) {
+    for (auto &state: states) {
+        if (state->getName() == name) {
+            return true;
+        }
+    }
+    return false;
 }

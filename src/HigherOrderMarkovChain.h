@@ -16,7 +16,6 @@ private:
 
 public:
     HigherOrderMarkovChain();
-    explicit HigherOrderMarkovChain(int ord);
     void addState(string &name);
     HigherOrderMarkovState* getState(string &name);
     void removeState(string &name);

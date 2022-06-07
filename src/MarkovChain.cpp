@@ -204,3 +204,10 @@ void MarkovChain::print(vector<string> ggT) {
     }
     output.close();
 }
+
+void MarkovChain::addFirstOrder(vector<string> fO) {
+    for (auto &el : fO){
+        MarkovState* markovState = new MarkovState(el);
+        this->addWord(markovState);
+    }
+}

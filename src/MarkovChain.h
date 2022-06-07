@@ -21,6 +21,7 @@ public:
     bool wordExists(string &word);
     void addWord(MarkovState* state);
     void randomWalkAlgorithm(string &input,int size = 0);
+    void addFirstOrder(vector<string> fO);
 
     void testWalk(string &input, int size);
     void print(vector<string> ggT);

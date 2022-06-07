@@ -14,7 +14,7 @@ private:
     map<vector<HigherOrderMarkovState*>, map<double, set<HigherOrderMarkovState*>>> transitions;
 public:
     HigherOrderMarkovState();
-    HigherOrderMarkovState(string &word);
+    explicit HigherOrderMarkovState(string &word);
 
     const string &getName() const;
     void setName(const string &name);
