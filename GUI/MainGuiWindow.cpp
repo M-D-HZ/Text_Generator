@@ -134,7 +134,6 @@ void MainGuiWindow::On_GenerateText_Clicked() {
     InFile.flush();
     InFile.close();
 
-    cout << comboBox->currentIndex() << endl;
     string Filename = "MonkBoek.txt";
     MarkovChain chain(Filename);
 
