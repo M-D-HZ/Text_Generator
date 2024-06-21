@@ -7,12 +7,12 @@
 
 ## 👥 Team
 
-|         Name          |                e-mail                     |       Student Number      |
-|-----------------------|-------------------------------------------|---------------------------|
-|  Yassir Chebaa Amimou | Yassir.Chebaaamimou@student.uantwerpen.be |         20173674          |
-|  Anass Hamzaoui       | Anass.Hamzaoui@student.uantwerpen.be      |         20210294          |
-| Chloë Mansibang       | Chloe.Mansibang@student.uantwerpen.be     |         20190723          |
-|  Yousra Smits         | Yousra.Smits@student.uantwerpen.be        |         20201267          |
+|         Name          |
+|-----------------------|
+|  Yassir Chebaa Amimou |
+|  Anass Hamzaoui       |
+| Chloë Mansibang       |
+|  Yousra Smits         |
 ---
 
 ## 👀 View
